@@ -27,7 +27,7 @@ app.get("/", async (req, res) => {
   }
 });
 
-// Создать пользователя
+// Создать пользователя в БД
 app.post("/register", registerValidation, async (req, res) => {
   try {
     const body = req.body;
